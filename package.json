@@ -1,6 +1,6 @@
 {
   "name": "@15ms/signing",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A toolkit for 15ms services to create or verify message signing.",
   "engines": {
     "node": ">=20.0.0"

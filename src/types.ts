@@ -5,7 +5,7 @@ interface ISignature {
   credential: string;
   accessToken: string;
   resourceURI: string;
-  contentHash: string;
+  contentHash?: string;
 }
 
 interface IAuthorization {

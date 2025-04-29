@@ -20,6 +20,7 @@ import {
 
 const signature: string = await createSignature({
   algorithm: '15ms-v1-hmac-sha256',
+  credential: 'Credential', // YourCredential
   accessToken: 'AccessToken', // getAccessTokenByCredential(YourCredential)
   resourceURI: 'ResourceURI', // such as /account/detail
   contentHash: 'ContentHash' // hex(md5(YourRequestBody))
@@ -28,6 +29,7 @@ const signature: string = await createSignature({
 const matched: boolean = await verifySignature({
   signature: 'YourSignature',
   algorithm: '15ms-v1-hmac-sha256',
+  credential: 'Credential', // YourCredential
   accessToken: 'AccessToken', // getAccessTokenByCredential(YourCredential)
   resourceURI: 'ResourceURI', // such as /account/detail
   contentHash: 'ContentHash' // hex(md5(YourRequestBody))
