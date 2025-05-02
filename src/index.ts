@@ -71,7 +71,7 @@ function parseAuthorization(authorization: string): IAuthorization {
   };
   const componentKeyMap: { [key in string]: keyof Omit<IAuthorization, 'algorithm'>; } = {
     'credential': 'credential',
-    'request-uri': 'resourceURI',
+    'resource-uri': 'resourceURI',
     'content-hash': 'contentHash',
     'signature': 'signature'
   };
